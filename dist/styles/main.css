@@ -987,7 +987,9 @@ body {
 
 @media screen and (max-height: 530px) {
   .hero__content h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+    line-height: 1.15;
+    margin-top: 3rem;
   }
 }
 
