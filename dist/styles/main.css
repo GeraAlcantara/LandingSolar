@@ -509,11 +509,24 @@ body {
   padding-left: 4rem;
 }
 
+@media screen and (max-width: 767px) {
+  .hero__content {
+    width: 100%;
+    padding-left: unset;
+  }
+}
+
 .hero__content h1 {
   font-size: 72px;
   font-weight: 800;
   line-height: 136%;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__content h1 {
+    font-size: 2.812rem;
+  }
 }
 
 p {
