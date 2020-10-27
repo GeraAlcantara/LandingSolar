@@ -31,6 +31,7 @@ body {
         @include Mobile {
             width: 100%;
             padding-left: unset;
+            padding-top: 3rem;
         }
         
         h1 {
@@ -53,10 +54,13 @@ p {
 }
 
 .feature {
-    
     margin: 0 auto;
     padding: 75px 0;
     background-color: #f0f0f0;
+    display: flex;
+    @include Mobile {
+        flex-flow: column;
+    }
 }
 
 .row {
@@ -127,6 +131,9 @@ p {
       @include Mobile {
           grid-template-rows: 1fr auto;
           grid-template-columns: 1fr 1fr;
+          width: 90%;
+          max-width: unset;
+          min-width: unset;
       }
       @include Portrait {
           align-self: center;
