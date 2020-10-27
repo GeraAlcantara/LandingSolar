@@ -313,6 +313,37 @@
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .main-header .nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #272727;
+    -webkit-transition: opacity .8s .5s, -webkit-clip-path 1s .5s;
+    transition: opacity .8s .5s, -webkit-clip-path 1s .5s;
+    transition: opacity .8s .5s, clip-path 1s .5s;
+    transition: opacity .8s .5s, clip-path 1s .5s, -webkit-clip-path 1s .5s;
+    -webkit-clip-path: circle(200px at top right);
+            clip-path: circle(200px at top right);
+    padding: 10rem 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2rem;
+    color: #fff;
+  }
+}
+
 .main-header .nav-link {
   padding: 0 !important;
   -webkit-transition: opacity 0.4s ease-in-out, -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -397,6 +428,19 @@
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .main-header .nav-link {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    width: 100%;
+    text-align: center;
+  }
+  .main-header .nav-link a {
+    display: block;
+  }
+}
+
 .main-header .menu-icon {
   position: relative;
   padding: 26px 10px;
@@ -418,6 +462,12 @@
 }
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .main-header .menu-icon {
+    display: block;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .main-header .menu-icon {
     display: block;
   }
@@ -451,6 +501,14 @@
 }
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .main-header .menu-icon__line {
+    -webkit-animation: closedMid 0.8s backwards;
+            animation: closedMid 0.8s backwards;
+    animation-direction: reverse;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .main-header .menu-icon__line {
     -webkit-animation: closedMid 0.8s backwards;
             animation: closedMid 0.8s backwards;
@@ -498,6 +556,14 @@
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .main-header .menu-icon__line::before {
+    -webkit-animation: closedTop 0.8s backwards;
+            animation: closedTop 0.8s backwards;
+    animation-direction: reverse;
+  }
+}
+
 .main-header .menu-icon__line::after {
   -webkit-transform: translateY(5px);
           transform: translateY(5px);
@@ -520,6 +586,14 @@
 }
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .main-header .menu-icon__line::after {
+    -webkit-animation: closedBtm 0.8s backwards;
+            animation: closedBtm 0.8s backwards;
+    animation-direction: reverse;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .main-header .menu-icon__line::after {
     -webkit-animation: closedBtm 0.8s backwards;
             animation: closedBtm 0.8s backwards;
@@ -725,6 +799,67 @@
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .main-header .menu-btn:checked ~ .nav-links {
+    opacity: 1;
+    -webkit-clip-path: circle(100% at center);
+            clip-path: circle(100% at center);
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: opacity 0.4s ease-in-out 1s, -webkit-transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: opacity 0.4s ease-in-out 1s, -webkit-transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: opacity 0.4s ease-in-out 1s, transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: opacity 0.4s ease-in-out 1s, transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1), -webkit-transform 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(1) {
+    -webkit-transition-delay: .7s;
+            transition-delay: .7s;
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(2) {
+    -webkit-transition-delay: .8s;
+            transition-delay: .8s;
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(3) {
+    -webkit-transition-delay: .9s;
+            transition-delay: .9s;
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(4) {
+    -webkit-transition-delay: 1s;
+            transition-delay: 1s;
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(5) {
+    -webkit-transition-delay: 1.1s;
+            transition-delay: 1.1s;
+  }
+  .main-header .menu-btn:checked ~ .nav-links .nav-link:nth-of-type(6) {
+    -webkit-transition-delay: 1.2s;
+            transition-delay: 1.2s;
+  }
+  .main-header .menu-btn:checked ~ .menu-icon {
+    border-radius: 50%;
+    -webkit-animation: pulse 1s;
+            animation: pulse 1s;
+  }
+  .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line {
+    background: #fff;
+    -webkit-animation: openMid 0.8s forwards;
+            animation: openMid 0.8s forwards;
+  }
+  .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::before {
+    background: #fff;
+    -webkit-animation: openTop 0.8s forwards;
+            animation: openTop 0.8s forwards;
+  }
+  .main-header .menu-btn:checked ~ .menu-icon .menu-icon__line::after {
+    background: #fff;
+    -webkit-animation: openBtm 0.8s forwards;
+            animation: openBtm 0.8s forwards;
+  }
+}
+
 .main-header.scrolled {
   height: 55px;
   background: #a6b2b7;
@@ -803,6 +938,14 @@ body {
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .hero__content {
+    width: 100%;
+    padding-left: unset;
+    padding-top: 3rem;
+  }
+}
+
 .hero__content h1 {
   font-size: 72px;
   font-weight: 800;
@@ -823,6 +966,12 @@ body {
 }
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .hero__content h1 {
+    font-size: 2.812rem;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .hero__content h1 {
     font-size: 2.812rem;
   }
@@ -863,6 +1012,15 @@ p {
 }
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .feature {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .feature {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -918,6 +1076,12 @@ p {
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .column {
+    margin: 0;
+  }
+}
+
 .content {
   max-width: 445px;
   margin-left: 4rem;
@@ -960,6 +1124,15 @@ p {
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .content {
+    margin: 1rem auto;
+    max-width: unset;
+    min-width: unset;
+    width: 80vw;
+  }
+}
+
 .content h3 {
   font-weight: 800;
   font-size: 40px;
@@ -986,6 +1159,13 @@ p {
 }
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .content p {
     font-size: 1rem;
     line-height: 1.5;
@@ -1054,6 +1234,18 @@ p {
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .imgGroup {
+    -ms-grid-rows: 1fr auto;
+        grid-template-rows: 1fr auto;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 90%;
+    max-width: unset;
+    min-width: unset;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .imgGroup {
     -ms-flex-item-align: center;
@@ -1093,6 +1285,14 @@ p {
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .imgGroup {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
 .imgGroup .imgGroupitem:nth-of-type(1) {
   -ms-grid-row: 1;
   grid-row: 1;
@@ -1116,6 +1316,13 @@ p {
 }
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .imgGroup .imgGroupitem:nth-of-type(1) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .imgGroup .imgGroupitem:nth-of-type(1) {
     grid-row: auto;
     grid-column: auto;
@@ -1153,6 +1360,13 @@ p {
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .imgGroup .imgGroupitem:nth-of-type(2) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+
 .imgGroup .imgGroupitem:nth-of-type(3) {
   -ms-grid-row: 2;
   grid-row: 2;
@@ -1184,6 +1398,13 @@ p {
   }
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .imgGroup .imgGroupitem:nth-of-type(3) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+
 .imgGroup .imgGroupitem:nth-of-type(4) {
   -ms-grid-row: 2;
   grid-row: 2;
@@ -1209,6 +1430,13 @@ p {
 }
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .imgGroup .imgGroupitem:nth-of-type(4) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .imgGroup .imgGroupitem:nth-of-type(4) {
     grid-row: auto;
     grid-column: auto;
