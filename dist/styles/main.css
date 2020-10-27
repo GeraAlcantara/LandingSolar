@@ -909,6 +909,14 @@ body {
   color: black;
 }
 
+@media screen and (max-height: 530px) {
+  .hero {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .hero__content {
   max-width: 665px;
   padding-left: 4rem;
@@ -974,6 +982,12 @@ body {
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .hero__content h1 {
     font-size: 2.812rem;
+  }
+}
+
+@media screen and (max-height: 530px) {
+  .hero__content h1 {
+    font-size: 4rem;
   }
 }
 
