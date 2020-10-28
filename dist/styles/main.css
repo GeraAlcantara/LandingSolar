@@ -2400,30 +2400,35 @@ label.error {
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .servicios .servicios-content h2, .cert .servicios-content h2, .cert .cert-content h2 {
     margin-top: 2rem;
+    font-size: 40px;
   }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
   .servicios .servicios-content h2, .cert .servicios-content h2, .cert .cert-content h2 {
     margin-top: 2rem;
+    font-size: 40px;
   }
 }
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
   .servicios .servicios-content h2, .cert .servicios-content h2, .cert .cert-content h2 {
     margin-top: 2rem;
+    font-size: 40px;
   }
 }
 
 @media screen and (max-device-width: 767px) and (orientation: landscape) {
   .servicios .servicios-content h2, .cert .servicios-content h2, .cert .cert-content h2 {
     margin-top: 2rem;
+    font-size: 40px;
   }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .servicios .servicios-content h2, .cert .servicios-content h2, .cert .cert-content h2 {
     margin-top: 2rem;
+    font-size: 40px;
   }
 }
 
