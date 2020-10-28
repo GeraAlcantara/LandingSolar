@@ -263,7 +263,7 @@ p {
 }
 
 
-.servicios {
+.servicios  {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -308,6 +308,23 @@ p {
             @include Mobile {
                 margin-bottom: 2rem;
             }
+        }
+    }
+}
+
+.cert {
+    @extend .servicios;
+    .certImg {
+        @extend .serviciosImg;
+        
+    }
+    .cert-content {
+        max-width: 550px;
+        @extend .servicios-content;
+    
+        h3 {
+            font-weight: 400;
+            margin-top: 2rem;
         }
     }
 }
