@@ -7,6 +7,30 @@
   display: flex;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .social-icons {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .social-icons {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .social-icons {
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .social-icons {
+    margin: 1rem 0;
+  }
+}
+
 .social-icon {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,3 +1,4 @@
+@import 'mixins';
 /* Color Variables */
 $color-codepen: #000;
 $color-github: #4284c0;
@@ -27,6 +28,9 @@ $gray300: #D9DBE1;
 /* Social Icons */
 .social-icons {
   display: flex;
+  @include Mobile {
+    margin: 1rem 0;
+}
 }
 
 .social-icon {
@@ -43,6 +47,7 @@ $gray300: #D9DBE1;
   font-size: 1rem;
   text-decoration: none;
   transition: all 0.15s ease;
+
 
   &:hover {
     color: #fff;
