@@ -152,8 +152,8 @@
 							<div class="form-widget">
 
 								<div class="form-result"></div>
-
-								<form class="mb-0" id="template-contactform" name="template-contactform" action="include/form.php" method="post"> <!-- TODO: fix php and send it to netlyfly -->
+                <!-- action="include/form.php" -->
+								<form class="mb-0" id="Solar-Contacto-Form" name="Test_v1_Solar-Contacto-Form"  method="post" data-netlify="true" onsubmit="submit"> <!-- TODO: fix php and send it to netlyfly -->
 
 									<div class="form-process">
 										<div class="css3-spinner">
@@ -163,30 +163,30 @@
 
 									<div class="row">
 										<div class="col-md-4 form-group">
-											<label for="template-contactform-name">Nombre <small>*</small></label>
-											<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+											<label for="Solar-Contacto-Form-nombre">Nombre <small>*</small></label>
+											<input type="text" id="Solar-Contacto-Form-nombre" name="Solar-Contacto-Form-nombre" value="" class="sm-form-control required" />
 										</div>
 
 										<div class="col-md-4 form-group">
-											<label for="template-contactform-email">Email <small>*</small></label>
-											<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+											<label for="Solar-Contacto-Form-email">Email <small>*</small></label>
+											<input type="email" id="Solar-Contacto-Form-email" name="Solar-Contacto-Form-email" value="" class="required email sm-form-control" />
 										</div>
 
 										<div class="col-md-4 form-group">
-											<label for="template-contactform-phone">Telefono</label>
-											<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
+											<label for="Solar-Contacto-Form-telefono">Telefono</label>
+											<input type="text" id="Solar-Contacto-Form-telefono" name="Solar-Contacto-Form-telefono" value="" class="sm-form-control" />
 										</div>
 
 										<div class="w-100"></div>
 
 										<div class="col-md-8 form-group">
-											<label for="template-contactform-subject">Asunto <small>*</small></label>
-											<input type="text" id="template-contactform-subject" name="subject" value="" class="required form-control" />
+											<label for="Solar-Contacto-Form-asunto">Asunto <small>*</small></label>
+											<input type="text" id="Solar-Contacto-Form-asunto" name="asunto" value="" class="required form-control" />
 										</div>
 
 										<div class="col-md-4 form-group">
-											<label for="template-contactform-service">Tipo de servicio</label>
-											<select id="template-contactform-service" name="template-contactform-service" class="sm-form-control">
+											<label for="Solar-Contacto-Form-servicio">Tipo de servicio</label>
+											<select id="Solar-Contacto-Form-servicio" name="Solar-Contacto-Form-servicio" class="sm-form-control">
 												<option value="">-- selecciona --</option>
 												<option value="Wordpress">Cotización</option>
 												<option value="PHP / MySQL">Informes</option>
@@ -198,12 +198,12 @@
 										<div class="w-100"></div>
 
 										<div class="col-12 form-group">
-											<label for="template-contactform-message">Message <small>*</small></label>
-											<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+											<label for="Solar-Contacto-Form-mensaje">Mensaje <small>*</small></label>
+											<textarea class="required sm-form-control" id="Solar-Contacto-Form-mensaje" name="Solar-Contacto-Form-mensaje" rows="6" cols="30"></textarea>
 										</div>
 
 										<div class="col-12 form-group d-none">
-											<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+											<input type="text" id="Solar-Contacto-Form-botcheck" name="Solar-Contacto-Form-botcheck" value="" class="sm-form-control" />
 										</div>
 
 										<div class="col-12 form-group">
@@ -211,7 +211,7 @@
 										</div>
 									</div>
 
-									<input type="hidden" name="prefix" value="template-contactform-">
+									<input type="hidden" name="prefix" value="Solar-Contacto-Form-">
 
 								</form>
 							</div>
