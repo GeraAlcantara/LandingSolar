@@ -19,9 +19,11 @@ $primary: #e0c137;
 
     @include Mobile {
         justify-content: space-between;
+        padding: 0 1rem;
     }
     @include Portrait {
         justify-content: space-between;
+        
     }
 
     a {
@@ -81,6 +83,9 @@ $primary: #e0c137;
             font-family: 'Manrope';
             font-weight: 700;
             font-size: 18px;
+            @include Mobile {
+                font-size: 2rem;
+            }
 
             @include Portrait {
                 font-size: 14px;

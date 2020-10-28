@@ -213,6 +213,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0 1rem;
   }
 }
 
@@ -221,6 +222,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0 1rem;
   }
 }
 
@@ -229,6 +231,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0 1rem;
   }
 }
 
@@ -237,6 +240,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding: 0 1rem;
   }
 }
 
@@ -423,6 +427,30 @@
   font-family: 'Manrope';
   font-weight: 700;
   font-size: 18px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .main-header .nav-link a {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .main-header .nav-link a {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .main-header .nav-link a {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .main-header .nav-link a {
+    font-size: 2rem;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
