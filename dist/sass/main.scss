@@ -449,5 +449,35 @@ label.error {
     /* background-color: #022D3D; */
     overflow: hidden;
     flex-flow: column;
+}
+.hero404 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    background: #6d7482;
+    justify-items: center;
+    align-items: center;
+    @include Mobile {
+        grid-template-columns: 1fr;
+    }
+    &__content {
+        @extend .hero__content;
+        justify-self: flex-start;
+        text-align: right;
+        font-size: 72px;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        @include Mobile {
+            font-size: 2.812rem;
+            text-align: left;
+            padding-left: 1rem;
+            
 
+        }
+    }
+    .anim404 {
+        width: 90%;
+        height: 90%;
+    }
 }
