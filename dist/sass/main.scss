@@ -20,7 +20,8 @@ body {
     height: 100vh;
     background: rgb(217,232,239);
     background-image: url(../images/herobg.jpg);
-    background-image: linear-gradient(0deg rgba($color: #d9e8ef, $alpha: 0.8), rgba($color: #eaf2f5, $alpha: 0.1) ), url(../images/herobg.png);
+    background-image: linear-gradient(0deg rgba($color: #d9e8ef, $alpha: 0.8), rgba($color: #eaf2f5, $alpha: 0.1) ), url(../images/herobg.jpg);
+    background-size: cover;
     
     display: flex;
     flex-flow: column;
@@ -30,11 +31,34 @@ body {
     color: black;
     @include MobileLandscape {
         justify-content: center;
+        
+    }
+    @include Mobile {
+        background-image: unset;
+        background: linear-gradient(0deg  #d9e8ef,  #eaf2f5 );
+
+    }
+    @include IpadLandscape {
+        justify-content: unset;
+    }
+    @include Portrait {
+        justify-content: unset;
+
+        background-image: linear-gradient(0deg rgba($color: #d9e8ef, $alpha: 0.8), rgba($color: #eaf2f5, $alpha: 0.1) ), url(../images/herobg_portrail.jpg);
+        
     }
   
     &__content {
         max-width: 665px;
         padding-left: 4rem;
+        @include IpadLandscape{
+            padding-top: 200px;
+            
+        }
+        @include Portrait{
+            padding-top: 7rem;
+            
+        }
         @include Mobile {
             width: 100%;
             padding-left: unset;
@@ -54,6 +78,9 @@ body {
                 font-size: 3.5rem;
                 line-height: 1.15;
                 margin-top: 3rem;
+            }
+            @include IpadLandscape {
+                font-size: 40px;
             }
         }
     }
@@ -400,6 +427,10 @@ label.error {
             @include Mobile {
                 margin-top: 2rem;
                 font-size: 40px;
+            }
+            @include Portrait {
+                font-size: 40px;
+                padding-top: 2rem;
             }
         }
         p{
