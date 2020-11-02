@@ -9,6 +9,7 @@ module.exports = merge(common, {
       contentBase: path.join(__dirname, "dist"),
       compress: true,
       port: 9000,
+      
   },
   output: {
     filename: "js/bundle.js",
