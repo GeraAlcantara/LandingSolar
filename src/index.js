@@ -1,3 +1,19 @@
+import _ from 'lodash';
+import './styles/reset.css';
+import './sass/main.scss';
+
+
+function component() {
+    const element = document.createElement('div');
+  
+    // Lodash, now imported by this script
+    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+  
+    return element;
+  }
+  
+  document.body.appendChild(component());
+
 const header = document.querySelector('.main-header');
     window.addEventListener('scroll', () => {
         const scrollPos = window.scrollY;
@@ -29,21 +45,4 @@ const header = document.querySelector('.main-header');
         
     }
 
-
-    /* function check(checked = true) {
-        const cbs = document.querySelectorAll('input[name="color"]');
-        cbs.forEach((cb) => {
-            cb.checked = checked;
-        });
-    }
     
-    function handleNavClick(e) {
-        const navLink = document.querySelectorAll('.nav-links')
-        
-    } 
-    
-    function closeNav() {
-        check(false);
-        // reassign click event handler
-        this.onclick = handleNavClick;
-    } */
