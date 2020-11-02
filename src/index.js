@@ -1,18 +1,6 @@
-import _ from 'lodash';
+
 import './styles/reset.css';
 import './sass/main.scss';
-
-
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component());
 
 const header = document.querySelector('.main-header');
     window.addEventListener('scroll', () => {
@@ -44,5 +32,7 @@ const header = document.querySelector('.main-header');
         } 
         
     }
+
+    console.log('I get called from index.js live reload ');
 
     

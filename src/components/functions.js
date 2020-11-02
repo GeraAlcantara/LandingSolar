@@ -1,3 +1,6 @@
+import './styles/reset.css';
+import './sass/main.scss';
+
 const header = document.querySelector('.main-header');
     window.addEventListener('scroll', () => {
         const scrollPos = window.scrollY;
@@ -29,7 +32,7 @@ const header = document.querySelector('.main-header');
         
     }
 
-    console.log('I get called from functions.js! again!!! nowwww');
+    console.log('I get called from functioheyyy ');
 
 
     /* function check(checked = true) {
