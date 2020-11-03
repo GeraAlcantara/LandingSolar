@@ -1330,9 +1330,9 @@ body {
 .hero {
   height: 100vh;
   background: #d9e8ef;
-  background-image: url(../images/herobg.jpg);
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(234, 242, 245, 0.1))), url(../images/herobg.jpg);
-  background-image: linear-gradient(0deg rgba(217, 232, 239, 0.8), rgba(234, 242, 245, 0.1)), url(../images/herobg.jpg);
+  background-image: url(../images/herobg.webp);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(234, 242, 245, 0.1))), url(../images/herobg.webp);
+  background-image: linear-gradient(0deg rgba(217, 232, 239, 0.8), rgba(234, 242, 245, 0.1)), url(../images/herobg.webp);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1412,8 +1412,8 @@ body {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(234, 242, 245, 0.1))), url(../images/herobg_portrail.jpg);
-    background-image: linear-gradient(0deg rgba(217, 232, 239, 0.8), rgba(234, 242, 245, 0.1)), url(../images/herobg_portrail.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(234, 242, 245, 0.1))), url(../images/herobg_portrail.webp);
+    background-image: linear-gradient(0deg rgba(217, 232, 239, 0.8), rgba(234, 242, 245, 0.1)), url(../images/herobg_portrail.webp);
   }
 }
 

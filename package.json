@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/GeraAlcantara/LandingSolar/issues"
   },
-  "homepage": "https://github.com/GeraAlcantara/LandingSolar#readme"
+  "homepage": "https://github.com/GeraAlcantara/LandingSolar#readme",
+  "dependencies": {}
 }
