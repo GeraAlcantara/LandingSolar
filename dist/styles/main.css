@@ -1404,12 +1404,13 @@ body {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+    min-height: 400px;
   }
 }
 
 @media screen and (max-height: 530px) {
   .hero {
-    min-height: 300px;
+    min-height: 400px;
   }
 }
 

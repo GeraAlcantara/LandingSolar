@@ -40,10 +40,10 @@ body {
     }
     @include IpadLandscape {
         justify-content: unset;
-        
+        min-height: 400px;
     }
     @include MobileLandscape {
-        min-height: 300px;
+        min-height: 400px;
     }
     @include Portrait {
         justify-content: unset;
