@@ -43,7 +43,7 @@ body {
        
     }
     @include MobileLandscape {
-        min-height: 400px;
+        min-height: 600px;
     }
     @include Portrait {
         justify-content: unset;
@@ -61,6 +61,7 @@ body {
         }
         @include MobileLandscape {
             max-width: 400px;
+            padding-top: 10%;
         }
         @include Portrait{
             padding-top: 7rem;
@@ -434,6 +435,9 @@ label.error {
             margin-bottom: 2rem;
             @include Mobile {
                 margin-top: 2rem;
+                font-size: 40px;
+            }
+            @include MobileLandscape {
                 font-size: 40px;
             }
             @include Portrait {

@@ -1409,7 +1409,7 @@ body {
 
 @media screen and (max-height: 530px) and (orientation: landscape) {
   .hero {
-    min-height: 400px;
+    min-height: 600px;
   }
 }
 
@@ -1437,6 +1437,7 @@ body {
 @media screen and (max-height: 530px) and (orientation: landscape) {
   .hero__content, .hero404__content {
     max-width: 400px;
+    padding-top: 10%;
   }
 }
 
@@ -2523,6 +2524,12 @@ label.error {
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .servicios .servicios-content h2, .cert .servicios-content h2, .cert .cert-content h2 {
     margin-top: 2rem;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-height: 530px) and (orientation: landscape) {
+  .servicios .servicios-content h2, .cert .servicios-content h2, .cert .cert-content h2 {
     font-size: 40px;
   }
 }
