@@ -2386,6 +2386,12 @@ label.error {
       align-self: flex-end;
 }
 
+.servicios .serviciosImg img, .cert .serviciosImg img, .cert .certImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .servicios .serviciosImg, .cert .serviciosImg, .cert .certImg {
     -webkit-box-ordinal-group: 3;

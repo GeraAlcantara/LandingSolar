@@ -414,6 +414,10 @@ label.error {
         order: 1;
         margin-right: 3rem;
         align-self: flex-end;
+        & img {
+            object-fit: cover;
+            width: 100%;
+        }
         @include Mobile {
             order: 2;
             margin-right: unset;
