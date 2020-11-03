@@ -1404,6 +1404,11 @@ body {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+  }
+}
+
+@media screen and (max-height: 530px) {
+  .hero {
     min-height: 300px;
   }
 }
@@ -1425,7 +1430,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .hero__content, .hero404__content {
-    padding-top: 200px;
+    padding-top: 20%;
   }
 }
 
