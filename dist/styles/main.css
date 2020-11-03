@@ -1404,6 +1404,7 @@ body {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+    min-height: 300px;
   }
 }
 
