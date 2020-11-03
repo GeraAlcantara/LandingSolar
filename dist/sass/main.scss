@@ -40,7 +40,7 @@ body {
     }
     @include IpadLandscape {
         justify-content: unset;
-        min-height: 400px;
+       
     }
     @include MobileLandscape {
         min-height: 400px;
@@ -58,6 +58,9 @@ body {
         @include IpadLandscape{
             padding-top: 20%;
             
+        }
+        @include MobileLandscape {
+            max-width: 400px;
         }
         @include Portrait{
             padding-top: 7rem;

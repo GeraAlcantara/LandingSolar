@@ -1351,7 +1351,7 @@ body {
   color: black;
 }
 
-@media screen and (max-height: 530px) {
+@media screen and (max-height: 530px) and (orientation: landscape) {
   .hero {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1404,11 +1404,10 @@ body {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
-    min-height: 400px;
   }
 }
 
-@media screen and (max-height: 530px) {
+@media screen and (max-height: 530px) and (orientation: landscape) {
   .hero {
     min-height: 400px;
   }
@@ -1432,6 +1431,12 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .hero__content, .hero404__content {
     padding-top: 20%;
+  }
+}
+
+@media screen and (max-height: 530px) and (orientation: landscape) {
+  .hero__content, .hero404__content {
+    max-width: 400px;
   }
 }
 
@@ -1518,7 +1523,7 @@ body {
   }
 }
 
-@media screen and (max-height: 530px) {
+@media screen and (max-height: 530px) and (orientation: landscape) {
   .hero__content h1, .hero404__content h1 {
     font-size: 3.5rem;
     line-height: 1.15;
