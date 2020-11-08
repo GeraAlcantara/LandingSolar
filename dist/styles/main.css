@@ -2727,3 +2727,149 @@ label.error {
   width: 90%;
   height: 90%;
 }
+
+#FAQ {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+}
+
+.content-faq {
+  padding: 2rem 5rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 2em;
+  -ms-grid-columns: (minmax(40%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .content-faq {
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+@media screen and (min-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .content-faq {
+    -ms-grid-columns: (minmax(50%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  .content-faq {
+    -ms-grid-columns: (minmax(50%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .content-faq {
+    -ms-grid-columns: (minmax(50%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .content-faq {
+    -ms-grid-columns: (minmax(50%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  .content-faq {
+    -ms-grid-columns: (minmax(50%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .content-faq {
+    -ms-grid-columns: (minmax(50%, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    padding: 0 2rem;
+  }
+}
+
+.content-faq p {
+  margin: .5rem;
+  line-height: 1.5;
+}
+
+.faq-item {
+  padding: 2em;
+  border-radius: .3em;
+  -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 50px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+  h2 {
+    margin-top: 2rem;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  h2 {
+    margin-top: 2rem;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  h2 {
+    margin-top: 2rem;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+  h2 {
+    margin-top: 2rem;
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  h2 {
+    margin-top: 2rem;
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-height: 530px) and (orientation: landscape) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  h2 {
+    font-size: 40px;
+    padding-top: 2rem;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  color: #444;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}

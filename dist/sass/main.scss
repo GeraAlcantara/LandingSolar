@@ -429,6 +429,7 @@ label.error {
         max-width: 450px;
         align-self: center;
         padding-left: 10%;
+        
         @include Mobile {
             order: 1;
             max-width: 90%;
@@ -529,4 +530,65 @@ label.error {
         width: 90%;
         height: 90%;
     }
+}
+
+#FAQ {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    
+} 
+
+.content-faq {
+    padding: 2rem 5rem;
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr) );
+    @include IpadLandscape {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr) );
+    }
+    @include Portrait {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr) );
+        padding: 0 2rem;
+    }
+    @include Mobile {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr) );
+        padding: 0 2rem;
+    }
+    p {
+        margin: .5rem;
+        line-height: 1.5;
+    }
+}
+.faq-item {
+    padding: 2em;
+    border-radius: .3em;
+    box-shadow: 5px 5px 30px rgba($color: #000000, $alpha: 0.1);
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 50px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    @include Mobile {
+        margin-top: 2rem;
+        font-size: 40px;
+    }
+    @include MobileLandscape {
+        font-size: 40px;
+    }
+    @include Portrait {
+        font-size: 40px;
+        padding-top: 2rem;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    color: #444;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
