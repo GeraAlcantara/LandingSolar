@@ -592,3 +592,43 @@ h3 {
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
+.aviso-privacidad{
+    padding: 0 15vw;
+    padding-top: 10%;
+    display: flex;
+    flex-flow: column;
+    @include Large {
+        padding: 7% 25vw;
+       
+    }
+
+    @include Mobile {
+        padding: 0 1rem;
+        padding-top: 100px;
+    }
+
+    h1 {
+        font-weight: 800;
+        @include Mobile {
+            font-size: 1.7rem;
+        }
+        @include MobileLandscape {
+            font-size: 40px;
+        }
+        @include Portrait {
+            font-size: 40px;
+            padding-top: 2rem;
+        }
+    }
+
+    h2 {
+        font-weight: 800;
+        font-size: 30px;
+        margin: 0;
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+        text-align: left !important;
+    }
+    
+}
