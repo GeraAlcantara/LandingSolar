@@ -2384,12 +2384,14 @@ label.error {
   /* margin-right: 3rem; */
   -ms-flex-item-align: end;
       align-self: flex-end;
+  height: 100%;
 }
 
 .servicios .serviciosImg img, .cert .serviciosImg img, .residencial .serviciosImg img, .cert .certImg img, .residencial .residencialImg img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
@@ -2445,7 +2447,7 @@ label.error {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding-left: 10%;
+  margin-left: 20%;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
@@ -2454,6 +2456,8 @@ label.error {
         -ms-flex-order: 2;
             order: 2;
     max-width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -2463,6 +2467,8 @@ label.error {
         -ms-flex-order: 2;
             order: 2;
     max-width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -2472,6 +2478,8 @@ label.error {
         -ms-flex-order: 2;
             order: 2;
     max-width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -2481,6 +2489,8 @@ label.error {
         -ms-flex-order: 2;
             order: 2;
     max-width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -2490,6 +2500,22 @@ label.error {
         -ms-flex-order: 2;
             order: 2;
     max-width: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .servicios .servicios-content, .cert .servicios-content, .residencial .servicios-content, .cert .cert-content, .residencial .residencial-content {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .servicios .servicios-content, .cert .servicios-content, .residencial .servicios-content, .cert .cert-content, .residencial .residencial-content {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
@@ -3120,7 +3146,7 @@ h3 {
 }
 
 .section-break .wrapper-title .title-description {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   padding-top: 2em;
 }
