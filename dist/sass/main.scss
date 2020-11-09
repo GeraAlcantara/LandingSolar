@@ -403,7 +403,7 @@ label.error {
 .servicios  {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(384px, 1fr) );
     justify-content: center;
     background-color: #F9FAFC;
     @include Mobile {
@@ -412,14 +412,14 @@ label.error {
     .serviciosImg {
         align-self: flex-start;
         order: 1;
-        margin-right: 3rem;
+        /* margin-right: 3rem; */
         align-self: flex-end;
         & img {
             object-fit: cover;
             width: 100%;
         }
         @include Mobile {
-            order: 2;
+            order: 1;
             margin-right: unset;
         }
     }
@@ -431,7 +431,7 @@ label.error {
         padding-left: 10%;
         
         @include Mobile {
-            order: 1;
+            order: 2;
             max-width: 90%;
         }
         h2 {
@@ -536,6 +536,10 @@ label.error {
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin: 0 auto;
+
+    h2 {
+        text-align: center;
+    }
     
 } 
 
@@ -572,7 +576,7 @@ h2 {
     margin: 0 auto;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    text-align: center;
+    
     @include Mobile {
         margin-top: 2rem;
         font-size: 40px;
@@ -631,4 +635,25 @@ h3 {
         text-align: left !important;
     }
     
+}
+
+.residencial {
+    @extend .servicios;
+
+    .residencial-content {
+        @extend .servicios-content;
+        order: 1;
+        @include Mobile {
+            order: 2;
+        }
+    }
+    .residencialImg{
+        @extend .serviciosImg;
+        order: 2;
+        margin-right: 0;
+        @include Mobile {
+            order: 1;
+        }
+    }
+
 }
