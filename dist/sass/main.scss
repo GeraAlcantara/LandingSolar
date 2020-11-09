@@ -665,16 +665,26 @@ h3 {
     .wrapper-title {
         background-color: $yellow;
         height: 300px;
+        @include Mobile{
+            height: 215px;
+        }
 
         .title-description {
             max-width: 90%;
             margin: 0 auto;
             padding-top: 2em;
+            @include Mobile {
+                padding-top: 1em;
+            }
             & h2 {
                 margin-bottom: .7rem;
+                @include Mobile {
+                    font-size: 30px;
+                }
             }
             & p {
                 margin-top: 0;
+                
             }
         }
     }
@@ -686,9 +696,27 @@ h3 {
         align-items: center;
         max-width: 75%;
         margin: 0 auto;
+        position: relative;
+        top: -100px;
+        @include Mobile {
+            max-width: 95%;
+            flex-wrap: wrap;
+            top: -40px;
+        }
+        @include MobileLandscape {
+            max-width: 95%;
+            top: -90px;
+        }
+        @include Portrait {
+            max-width: 95%;
+            top: -80px;
+        }
+        @include IpadLandscape {
+            max-width: 90%;
+            
+        }
         .hexagono {
-            position: relative;
-            top: -100px;
+            flex: 1;
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr;
@@ -696,6 +724,18 @@ h3 {
             justify-content: center;
             align-items: center;
             max-width: 237px;
+
+            @include IpadLandscape {
+                max-width: 200px;  
+            }
+            
+            @include MobileLandscape {
+                min-width: 100px;
+            }
+            @include Mobile {
+                min-width: 150px;
+            }
+
             img {
                 grid-area: hexagono;
             }
@@ -706,6 +746,17 @@ h3 {
                 font-size: 2rem;
                 position: relative;
                 top: -10px;
+
+                @include Mobile {
+                    font-size: 1rem;
+                    top: -6px;
+                }
+                @include Portrait {
+                    font-size: 1.25rem;
+                }
+                @include IpadLandscape {
+                    font-size: 1.5rem;  
+                }
                 
             }
 
