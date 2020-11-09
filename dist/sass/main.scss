@@ -3,6 +3,7 @@
 @import 'mixins';
 @import 'social';
 $gray300: #D9DBE1;
+$yellow: #FBD111;
 
 
 body {
@@ -655,5 +656,61 @@ h3 {
             order: 1;
         }
     }
+
+}
+
+.section-break {
+    height: 520px;
+    width: 100%;
+    .wrapper-title {
+        background-color: $yellow;
+        height: 300px;
+
+        .title-description {
+            max-width: 90%;
+            margin: 0 auto;
+            padding-top: 2em;
+            & h2 {
+                margin-bottom: .7rem;
+            }
+            & p {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .wrapper-hexagonos {
+        display: flex;
+        justify-content: space-around;
+        height: 237px;
+        align-items: center;
+        max-width: 75%;
+        margin: 0 auto;
+        .hexagono {
+            position: relative;
+            top: -100px;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas: "hexagono";
+            justify-content: center;
+            align-items: center;
+            max-width: 237px;
+            img {
+                grid-area: hexagono;
+            }
+            span {
+                grid-area: hexagono;
+                text-align: center;
+                font-weight: 900;
+                font-size: 2rem;
+                position: relative;
+                top: -10px;
+                
+            }
+
+        }
+    }
+    
 
 }

@@ -3078,3 +3078,77 @@ h3 {
             order: 1;
   }
 }
+
+.section-break {
+  height: 520px;
+  width: 100%;
+}
+
+.section-break .wrapper-title {
+  background-color: #FBD111;
+  height: 300px;
+}
+
+.section-break .wrapper-title .title-description {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 2em;
+}
+
+.section-break .wrapper-title .title-description h2 {
+  margin-bottom: .7rem;
+}
+
+.section-break .wrapper-title .title-description p {
+  margin-top: 0;
+}
+
+.section-break .wrapper-hexagonos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 237px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.section-break .wrapper-hexagonos .hexagono {
+  position: relative;
+  top: -100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: "hexagono";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 237px;
+}
+
+.section-break .wrapper-hexagonos .hexagono img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hexagono;
+}
+
+.section-break .wrapper-hexagonos .hexagono span {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hexagono;
+  text-align: center;
+  font-weight: 900;
+  font-size: 2rem;
+  position: relative;
+  top: -10px;
+}
