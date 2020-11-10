@@ -672,8 +672,16 @@ h3 {
 }
 
 .section-break {
-    height: 520px;
+    
     width: 100%;
+
+    @include Large {
+        min-height: 520px;
+    }
+    @include MobileLandscape {
+        height: 350px;
+    }
+    
     .wrapper-title {
         background-color: $yellow;
         height: 300px;
@@ -704,7 +712,7 @@ h3 {
     .wrapper-hexagonos {
         display: flex;
         justify-content: space-around;
-        height: 237px;
+        min-height: 237px;
         align-items: center;
         max-width: 75%;
         margin: 0 auto;
@@ -725,7 +733,7 @@ h3 {
         }
         @include IpadLandscape {
             max-width: 90%;
-            
+            top: -80px;
         }
         .hexagono {
             flex: 1;
@@ -775,5 +783,69 @@ h3 {
         }
     }
     
-
 }
+
+.features {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include Mobile {
+        justify-content: flex-start;
+        max-width: 90%;
+    }
+    @include Mobile {
+        justify-content: flex-start;
+    }
+    @include Portrait {
+        justify-content: flex-start;
+    }
+    .features-title{
+        justify-self: flex-start;
+        width: 100%;
+        h2 {
+            max-width: 520px;
+            text-align: left;
+            margin: 1em 0;
+            padding: 0;
+
+            @include Mobile {
+                font-size: 28px;
+            }
+        }
+
+    }
+    .feature-item {
+        /* max-width: 500px; */
+        display: grid;
+        grid-template-columns: minmax(60px, 72px) minmax(215px, 428px);
+        gap: 2em;
+        flex: 2 1 50%;
+        padding: 0 1em;
+        margin-bottom: 2em;
+        @include Mobile {
+            gap: 1em;
+        }
+        
+    }
+}
+.feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    background-color: #F4F5F7;
+    border-radius: 50%;        
+    & img {
+        width: 28px;
+    }
+    @include Mobile {
+        height: 60px;
+        width: 60px;
+    }
+
+    
+   
+} 
