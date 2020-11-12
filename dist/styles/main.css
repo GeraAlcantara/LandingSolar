@@ -2754,6 +2754,98 @@ label.error {
   height: 90%;
 }
 
+.FAQ {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+summary {
+  padding: 1em;
+  background: #FBD111;
+  cursor: pointer;
+  border-bottom: 1px solid #ddb608;
+  border-radius: .3em .3em;
+  font-weight: bold;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+summary:hover {
+  background: #ffd82c;
+}
+
+summary::-webkit-details-marker {
+  color: transparent;
+}
+
+summary::marker {
+  color: transparent;
+}
+
+summary span {
+  float: right;
+  padding: 0 1em;
+  position: relative;
+  top: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+details[open] summary ~ * {
+  -webkit-animation: sweep .5s ease-in-out forwards;
+          animation: sweep .5s ease-in-out forwards;
+}
+
+details[open] summary span {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  /* transform-origin: right; */
+}
+
+@-webkit-keyframes sweep {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes sweep {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+details {
+  /* background: #28303a; */
+  margin-bottom: 1em;
+}
+
+.summary-body {
+  margin: 0;
+  padding: 1em;
+  /* color: white; */
+  background: #f3f3f3;
+}
+
+.summary-body p, .summary-body ul {
+  margin-left: 1em;
+}
+
+/*  FAQ 
+=============================================-- */
 #FAQ {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -2838,6 +2930,8 @@ label.error {
   border-radius: .3em;
   -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
 h2 {

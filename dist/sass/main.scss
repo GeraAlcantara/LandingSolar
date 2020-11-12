@@ -342,6 +342,7 @@ label.error {
   z-index: 10;
   border-radius: 4px;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  
 }
 
 /* ----------------------------------------------------------------
@@ -545,6 +546,76 @@ label.error {
     }
 }
 
+.FAQ {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+summary{
+        padding: 1em;
+        background: $yellow;
+        cursor: pointer;
+        border-bottom: 1px solid #ddb608;
+        border-radius: .3em .3em;
+        font-weight: bold;
+        transition: background-color .3s;
+        &:hover {
+            background: #ffd82c;
+        }
+        &::-webkit-details-marker {
+            color: transparent;
+        }
+        &::marker {
+            color: transparent;
+        }
+        span {
+            float: right;
+            padding: 0 1em;
+            position: relative;
+            top: 5px;
+            transition: all .3s;
+        }
+    }
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out forwards;
+}
+details[open] summary span {
+    transform: rotate(180deg);
+    /* transform-origin: right; */
+}
+
+
+@keyframes sweep {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+        
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+details {
+    /* background: #28303a; */
+    margin-bottom: 1em;
+}
+.summary-body {
+    
+    margin: 0;
+    padding: 1em;
+    /* color: white; */
+    background: #f3f3f3;
+    p, ul {
+        margin-left: 1em;
+
+    }
+}
+
+
+
+/*  FAQ 
+=============================================-- */
 #FAQ {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -581,6 +652,7 @@ label.error {
     padding: 2em;
     border-radius: .3em;
     box-shadow: 5px 5px 30px rgba($color: #000000, $alpha: 0.1);
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.1);
 }
 
 h2 {
