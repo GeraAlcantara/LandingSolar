@@ -547,43 +547,87 @@ label.error {
 }
 
 .FAQ {
+    width: 100%;
+    padding: 4rem 1em;
+    padding-bottom: 0;
+    
+    background-color: #28303a;
+    color: white;
+    
+    h2 {
+        max-width: 550px;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+    .col2 {
+        display: grid;
+        max-width: 80%;
+        row-gap: 1em ;
+        column-gap: 2em;
+        margin: 0 auto;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 550px) );
+        /* align-items: center; */
+        justify-content: center;
+        .lottie-wrapper {
+            justify-self: center;
+        }
+    }
+}
+.FAQ-wrapper {
     max-width: 80%;
     margin: 0 auto;
+    /* display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 550px) ); */
+    margin-bottom: 2rem;
 }
 
 summary{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         padding: 1em;
+       
         background: $yellow;
         cursor: pointer;
-        border-bottom: 1px solid #ddb608;
+        /* border-bottom: 1px solid #ddb608; */
         border-radius: .3em .3em;
         font-weight: bold;
         transition: background-color .3s;
+        &:focus {
+            background: #ffd82c;
+            outline: none;
+            border: 1px solid #a1a1a1;
+        }
         &:hover {
             background: #ffd82c;
         }
         &::-webkit-details-marker {
             color: transparent;
+            display: none;
         }
         &::marker {
             color: transparent;
+            display: none;
         }
         span {
-            float: right;
             padding: 0 1em;
-            position: relative;
-            top: 5px;
+            /* padding-top: 4px; */
             transition: all .3s;
         }
     }
 details[open] summary ~ * {
     animation: sweep .5s ease-in-out forwards;
 }
+
 details[open] summary span {
     transform: rotate(180deg);
     /* transform-origin: right; */
 }
-
+details[open] summary {
+    border-radius: .3em .3em 0 0;
+}
 
 @keyframes sweep {
     from {
@@ -597,11 +641,11 @@ details[open] summary span {
     }
 }
 details {
-    /* background: #28303a; */
-    margin-bottom: 1em;
+    color: initial;
+    margin-bottom: 1rem;
 }
 .summary-body {
-    
+    border-radius: 0 0 .3em .3em;
     margin: 0;
     padding: 1em;
     /* color: white; */

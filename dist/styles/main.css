@@ -2755,19 +2755,74 @@ label.error {
 }
 
 .FAQ {
+  width: 100%;
+  padding: 4rem 1em;
+  padding-bottom: 0;
+  background-color: #28303a;
+  color: white;
+}
+
+.FAQ h2 {
+  max-width: 550px;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.FAQ .col2 {
+  display: -ms-grid;
+  display: grid;
+  max-width: 80%;
+  row-gap: 1em;
+  -webkit-column-gap: 2em;
+          column-gap: 2em;
+  margin: 0 auto;
+  -ms-grid-columns: (minmax(350px, 550px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 550px));
+  /* align-items: center; */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.FAQ .col2 .lottie-wrapper {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.FAQ-wrapper {
   max-width: 80%;
   margin: 0 auto;
+  /* display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 550px) ); */
+  margin-bottom: 2rem;
 }
 
 summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1em;
   background: #FBD111;
   cursor: pointer;
-  border-bottom: 1px solid #ddb608;
+  /* border-bottom: 1px solid #ddb608; */
   border-radius: .3em .3em;
   font-weight: bold;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
+}
+
+summary:focus {
+  background: #ffd82c;
+  outline: none;
+  border: 1px solid #a1a1a1;
 }
 
 summary:hover {
@@ -2776,17 +2831,17 @@ summary:hover {
 
 summary::-webkit-details-marker {
   color: transparent;
+  display: none;
 }
 
 summary::marker {
   color: transparent;
+  display: none;
 }
 
 summary span {
-  float: right;
   padding: 0 1em;
-  position: relative;
-  top: 5px;
+  /* padding-top: 4px; */
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -2800,6 +2855,10 @@ details[open] summary span {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   /* transform-origin: right; */
+}
+
+details[open] summary {
+  border-radius: .3em .3em 0 0;
 }
 
 @-webkit-keyframes sweep {
@@ -2829,11 +2888,12 @@ details[open] summary span {
 }
 
 details {
-  /* background: #28303a; */
-  margin-bottom: 1em;
+  color: initial;
+  margin-bottom: 1rem;
 }
 
 .summary-body {
+  border-radius: 0 0 .3em .3em;
   margin: 0;
   padding: 1em;
   /* color: white; */
