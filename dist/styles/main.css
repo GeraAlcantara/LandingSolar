@@ -2904,6 +2904,10 @@ details {
   margin-left: 1em;
 }
 
+.summary-body li {
+  margin-bottom: 1rem;
+}
+
 /*  FAQ 
 =============================================-- */
 #FAQ {
