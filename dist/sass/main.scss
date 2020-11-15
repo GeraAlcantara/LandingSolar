@@ -227,6 +227,14 @@ p {
         @include Mobile {
             grid-row: auto;
             grid-column: auto;
+            img {
+                object-position: left;
+            }
+        }
+    }
+    .imgGroupitem {
+        img {
+            object-fit: cover;
         }
     }
   }
@@ -243,6 +251,7 @@ p {
           flex-flow: column-reverse;
           height: auto;
           padding: 0 2rem;
+          align-items: center;
       }
       .copyright{
           abbr {
