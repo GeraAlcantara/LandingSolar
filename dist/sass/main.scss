@@ -238,13 +238,30 @@ p {
       color: $gray300;
       display: flex;
       justify-content: space-evenly;
-      align-items: center;
+      align-items: baseline;
       @include Mobile {
           flex-flow: column-reverse;
           height: auto;
           padding: 0 2rem;
       }
+      .copyright{
+          abbr {
+              text-decoration: none;
+            
+          }
+          a, span {
+              color: $yellow;
+          }
+      }
+      a {
+        color: $yellow;
+        font-weight: 800;
+        &:hover {
+            color: #fab906;
+        }
+      }
   }
+  
 /* Map */
   .min-vh-50 {
       height: 50vh;
